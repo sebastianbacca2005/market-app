@@ -10,20 +10,22 @@
     </head>
     <body>
         <center><h1>Register</h1></center><br>
-        <table border="1" align="center">
-        <tr><td><label>Firstname:</td></tr>
-        <tr><td><input type="text"></td></tr>
-        <tr><td><label>Lastname:</label></td></tr>
-         <tr><td><input type="text"></td></tr>
+        <form name="register-form" action="signup.php" method="post">
+         
+         <table border="1" align="center">
+         <tr><td><label>Firstname:</td></tr>
+         <tr><td><input type="text" name="fname" placeholder="jon ho" required></td></tr>
+         <tr><td><label>Lastname:</label></td></tr>
+         <tr><td><input type="text" name="lname" required></td></tr>
          <tr><td><label>Mobile number:</label></td></tr>
-         <tr><td><input type="text":</td></tr>
+         <tr><td><input type="text" name="mnumber" required</td></tr>
          <tr><td><label>Identification number:</label></td></tr>
-         <tr><td><input type="text"></td></tr>
+         <tr><td><input type="text" name="idnumber" required></td></tr>
          <tr><td><label>Email:</label></td></tr>
-         <tr><td><input type="text"></td></tr>
+         <tr><td><input type="text" name="email" required></td></tr>
          <tr><td><label>Password:</label></td></tr>
-         <tr><td><input type="text"></td></tr>
+         <tr><td><input type="text" name="passwd" required></td></tr>
          <tr><td><button>Register</button></td></tr>
-
+       </form>
     </body>
 </html>
