@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Ciudad</title>
+</head>
+<body>
+  <h2>Registrar Nueva Ciudad</h2>
+  <form action="cities.php" method="POST">
+    <label>Nombre:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Abreviatura:</label><br>
+    <input type="text" name="abbrev"><br><br>
+
+    <label>Código:</label><br>
+    <input type="text" name="code"><br><br>
+
+    <label>Estado:</label><br>
+    <select name="status">
+      <option value="active">Activa</option>
+      <option value="inactive">Inactiva</option>
+    </select><br><br>
+
+    <button type="submit">Guardar Ciudad</button>
+  </form>
+</body>
+</html>
